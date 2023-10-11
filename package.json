@@ -1,0 +1,28 @@
+{
+  "name": "phaser-rts-game",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "server": "yarn run webpack-dev-server",
+    "build": "yarn run webpack",
+    "heroku-postbuild": "./node_modules/webpack/bin/webpack.js -p --progress"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "copy-webpack-plugin": "^4.5.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "easystarjs": "^0.4.3",
+    "express": "^4.16.4",
+    "phaser": "^3.12.0"
+  }
+}
